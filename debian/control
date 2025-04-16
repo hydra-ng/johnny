@@ -1,0 +1,22 @@
+Source: johnny
+Section: unknown
+Priority: optional
+Maintainer: Joe <joe@rstrike.my.id>
+Rules-Requires-Root: no
+Build-Depends:
+ g++,
+ qtbase5-dev,
+ debhelper-compat (= 13),
+Standards-Version: 4.6.2
+Homepage: https://github.com/openwall/johnny
+Vcs-Browser: https://gitlab.com/hydra-ng/packages/johnny
+Vcs-Git: https://gitlab.com/hydra-ng/packages/johnny.git
+
+Package: johnny
+Architecture: any
+Multi-Arch: foreign
+Depends:
+ qtbase5-dev,
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: GUI frontend to John the ripper password cracker.
