@@ -24,12 +24,5 @@ override_dh_auto_clean:
 override_dh_install:
 	dh_install
 	mkdir -pv $(CURDIR)/debian/johnny/usr/share/johnny/
+
 	mv $(CURDIR)/johnny $(CURDIR)/debian/usr/share/johnny
-
-	rm -rfv $(CURDIR)/johnny
-
-	## Make symlinks
-
-	ln -sf /usr/share/johnny/johnny /usr/bin/johnny
-
-	chmod 775 /usr/bin/johnny
