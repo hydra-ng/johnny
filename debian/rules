@@ -25,4 +25,4 @@ override_dh_install:
 	dh_install
 	mkdir -pv $(CURDIR)/debian/johnny/usr/share/johnny/
 
-	mv $(CURDIR)/johnny $(CURDIR)/debian/usr/share/johnny
+	mv $(CURDIR)/johnny $(CURDIR)/debian/johnny/usr/share/johnny
